@@ -1,0 +1,13 @@
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 10000
+spring.cloud.loadbalancer.retry.enabled: true
+ribbon.ReadTimeout: 10000
+ribbon.ConnectTimeout: 10000
+hystrix.threadpool.default.coreSize: 200
+hystrix.threadpool.default.maximumSize: 200
+spring.cloud.consul.discovery.enabled: true
+spring.cloud.consul.discovery.healthCheckInterval: 10s
+spring.cloud.consul.discovery.instanceId: "${spring.application.name}:${spring.cloud.consul.discovery.hostname}:${server.port}"
+spring.cloud.consul.enabled: true
+spring.cloud.consul.host: 10.200.110.3
+spring.cloud.consul.port: 8500
+spring.zipkin.base-url: "http://10.200.110.3:9411"
